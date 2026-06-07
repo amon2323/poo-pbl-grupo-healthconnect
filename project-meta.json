@@ -1,0 +1,10 @@
+{
+  "curso": "Ciência da Computação",
+  "disciplina": "Projeto de Programação",
+  "tema_escolhido": "5",
+  "linguagem": "Java",
+  "gerenciador_dependencias": "Maven",
+  "integrantes": [
+    {"nome": "Amon Gabriel Barros Cavalcante", "amon2323": "user1"}
+  ]
+}
