@@ -15,4 +15,7 @@ public class PagamentoTest {
 
         assertTrue(pagamento.isPago());
     }
+    @Test
+void naoDeveCriarPagamentoComValorNegativo() {
+}
 }

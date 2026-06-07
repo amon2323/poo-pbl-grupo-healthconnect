@@ -37,4 +37,23 @@ public class ConsultaTest {
 
         assertEquals("CANCELADA", consulta.getStatus().name());
     }
+    @Test
+void naoDeveCriarConsultaSemId() {
+
+    Horario horario =
+            new Horario(LocalDateTime.now());
+
+    assertThrows(
+            IllegalArgumentException.class,
+            () -> new Consulta("", horario)
+    );
+}
+@Test
+void naoDeveCriarConsultaSemHorario() {
+
+    assertThrows(
+            IllegalArgumentException.class,
+            () -> new Consulta("1", null)
+    );
+}
 }
